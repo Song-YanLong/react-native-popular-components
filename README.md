@@ -4,9 +4,15 @@
 
 ## Installation
 
+npm
 ```sh
 npm install react-native-popular-components
 ```
+yarn
+```sh
+yarn add react-native-popular-components
+```
+
 
 ## Usage
 
