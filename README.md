@@ -19,9 +19,27 @@ yarn add react-native-popular-components
 ```js
 import { multiply } from 'react-native-popular-components';
 
-// ...
+// ...计算乘法
 
 const result = await multiply(3, 7);
+```
+
+```js
+import { createStyle } from 'react-native-popular-components';
+
+// ...样式
+
+const style = createStyle({
+  text: {
+    font: 'fontSize fontColor fontWeight',
+    padding: 'top right bottom left', //同css 可传1个、2个、3个、4个
+    margin: 'top right bottom left', //同css 可传1个、2个、3个、4个
+    border_radius: 'top right bottom left', //同css 可传1个、2个、3个、4个
+    border: 'borderWidth borderColor borderStyle direction', //第四个参数可选（方向） 默认四周都加边框
+  },
+});
+
+<Txet style={style.text}>样式<Text>
 ```
 
 ## Contributing
